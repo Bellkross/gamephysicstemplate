@@ -1,6 +1,7 @@
 #ifndef MASSSPRINGSYSTEMSIMULATOR_h
 #define MASSSPRINGSYSTEMSIMULATOR_h
 #include "Simulator.h"
+#include "util/FFmpeg.h"
 
 // Do Not Change
 #define EULER 0
@@ -44,15 +45,15 @@ public:
 
 private:
 	// Data Attributes
-	float m_fMass;
-	float m_fStiffness;
-	float m_fDamping;
-	int m_iIntegrator;
+	float m_fMass{};
+	float m_fStiffness{};
+	float m_fDamping{};
+	int m_iIntegrator{};
 
 	// UI Attributes
 	Vec3 m_externalForce;
-	Point2D m_mouse;
-	Point2D m_trackmouse;
-	Point2D m_oldtrackmouse;
+	Point2D m_mouse{};
+	Point2D m_trackmouse{};
+	Point2D m_oldtrackmouse{};
 };
 #endif
