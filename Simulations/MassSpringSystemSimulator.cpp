@@ -18,10 +18,10 @@ void MassSpringSystemSimulator::onMouse(int x, int y) {}
 void MassSpringSystemSimulator::setMass(float mass) {}
 void MassSpringSystemSimulator::setStiffness(float stiffness) {}
 void MassSpringSystemSimulator::setDampingFactor(float damping) {}
-int MassSpringSystemSimulator::addMassPoint(Vec3 position, Vec3 Velocity, bool isFixed) {}
+int MassSpringSystemSimulator::addMassPoint(Vec3 position, Vec3 Velocity, bool isFixed) { return 0; }
 void MassSpringSystemSimulator::addSpring(int masspoint1, int masspoint2, float initialLength) {}
-int MassSpringSystemSimulator::getNumberOfMassPoints() {}
-int MassSpringSystemSimulator::getNumberOfSprings() {}
+int MassSpringSystemSimulator::getNumberOfMassPoints() { return 0; }
+int MassSpringSystemSimulator::getNumberOfSprings() { return 0; }
 Vec3 MassSpringSystemSimulator::getPositionOfMassPoint(int index) { return Vec3(); }
 Vec3 MassSpringSystemSimulator::getVelocityOfMassPoint(int index) { return Vec3(); }
 void MassSpringSystemSimulator::applyExternalForce(Vec3 force) {}
