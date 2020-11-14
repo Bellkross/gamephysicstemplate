@@ -55,5 +55,9 @@ private:
 	Point2D m_mouse{};
 	Point2D m_trackmouse{};
 	Point2D m_oldtrackmouse{};
+
+	// Methods
+	// TODO add Euler integration method
+	// TODO add Midpoint integration method
 };
 #endif
